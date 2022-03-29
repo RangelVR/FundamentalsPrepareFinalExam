@@ -32,9 +32,7 @@ namespace _01_Secret_Chat
                     {
                         int firstIndexOffSubs = message.IndexOf(substringCommand);
                         message = message.Remove(firstIndexOffSubs, substringCommand.Length);
-                        char[] charArrSubstring = substringCommand.ToCharArray();
-                        Array.Reverse(charArrSubstring);
-                        message = message + string.Join("", charArrSubstring);
+                        message = message + string.Join("", substringCommand.Reverse());
 
                         Console.WriteLine(message);
                     }
