@@ -67,7 +67,6 @@ namespace _03._P_rates
                     Console.WriteLine($"{town} plundered! {gold} gold stolen, {people} citizens killed.");
                 }
                 
-
                 if (@event == "Prosper")
                 {
                     int gold = int.Parse(commandArr[2]);
@@ -100,6 +99,10 @@ namespace _03._P_rates
                     Console.WriteLine($"{city.Key} -> Population: {city.Value.Population} citizens," +
                         $" Gold: {city.Value.Gold} kg");
                 }
+            }
+            else
+            {
+                Console.WriteLine("Ahoy, Captain! All targets have been plundered and destroyed!");
             }
         }
     }
