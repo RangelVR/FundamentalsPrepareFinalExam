@@ -33,7 +33,6 @@ namespace _03._P_rates
                 int population = int.Parse(citiesArgs[1]);
                 int gold = int.Parse(citiesArgs[2]);
 
-
                 if (!cities.ContainsKey(town))
                 {
                     cities.Add(town, new City(population, gold));
@@ -65,9 +64,7 @@ namespace _03._P_rates
                     cities[town].Population -= people;
                     cities[town].Gold -= gold;
 
-                    Console.WriteLine($"{town} plundered! {gold} gold stolen, {people} citizens killed."
-);
-
+                    Console.WriteLine($"{town} plundered! {gold} gold stolen, {people} citizens killed.");
                 }
                 
 
