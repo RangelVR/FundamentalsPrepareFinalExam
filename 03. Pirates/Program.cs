@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -32,6 +32,7 @@ namespace _03._P_rates
                 string town = citiesArgs[0];
                 int population = int.Parse(citiesArgs[1]);
                 int gold = int.Parse(citiesArgs[2]);
+
 
                 if (!cities.ContainsKey(town))
                 {
@@ -67,6 +68,7 @@ namespace _03._P_rates
                     Console.WriteLine($"{town} plundered! {gold} gold stolen, {people} citizens killed.");
                 }
                 
+
                 if (@event == "Prosper")
                 {
                     int gold = int.Parse(commandArr[2]);
@@ -89,7 +91,6 @@ namespace _03._P_rates
 
             }
 
-
             if (cities.Count > 0)
             {
                 Console.WriteLine($"Ahoy, Captain! There are {cities.Count} wealthy settlements to go to:");
@@ -106,6 +107,4 @@ namespace _03._P_rates
             }
         }
     }
-
-    
 }
